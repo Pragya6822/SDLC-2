@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HelloTalk</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(65, 91, 212);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            background-color: rgb(65, 91, 212);
+            justify-content: center;
+        }
+
+        .phones {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            text-align: center;
+            margin-right: 50px;
+        }
+
+        .phone {
+            width: 200px;
+            height: 400px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .text-content {
+            max-width: 500px;
+        }
+
+        .text-content h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .text-content p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .download-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .download-button {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 150px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-button i {
+            font-size: 40px;
+        }
+
+        .stats {
+            display: flex;
+            gap: 50px;
+            margin-top: 20px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .stat p {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .container-1 {
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            font-size: 1.2em;
+            color: #777;
+            margin-bottom: 50px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            width: 45%;
+            max-width: 300px;
+            margin-bottom: 50px;
+        }
+
+        .feature img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        .feature h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 1em;
+            color: #555;
+        }
+        .container-3{
+            text-align: center;
+            
+        }
+        .title {
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 0.2em;
+        }
+        .subtitle {
+            font-size: 1em;
+            color: #888;
+            margin-bottom: 2em;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 200px;
+            text-align: left;
+            position: relative;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card .flag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        .card .info {
+            padding: 10px;
+        }
+        .card .info h3 {
+            margin: 0;
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+        .card .info p {
+            margin: 0.2em 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .card .chat {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .card .chat i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            HelloTalk
+        </div>
+        <div class="nav">
+            <a href="#">About</a>
+            <a href="#">HelloTalk Web</a>
+            <a href="#">English <i class="fas fa-caret-down"></i></a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="phones">
+            <img alt="Phone showing HelloTalk app interface" class="phone" height="400"
+                src="https://cdn.builder.io/api/v1/image/assets%2F3512af747f4c4611bb1ad1bd0f2c1a3c%2Fcbbf10d17fb643f5b00d3228ce015550?format=webp&width=750&quality=75"
+                width="200" />
+        </div>
+        <div class="text-content">
+            <h1>Talk to the World</h1>
+            <p>Learn a language for free by chatting with native speakers around the world!</p>
+            <div class="download-buttons">
+                <div class="download-button">
+                    <i class="fab fa-apple"></i>
+                    <p>Download the iOS app</p>
+                </div>
+                <div class="download-button">
+                    <i class="fab fa-android"></i>
+                    <p>Download the Android app</p>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <h2>150+</h2>
+                    <p>Languages supported</p>
+                </div>
+                <div class="stat">
+                    <h2>50+ million</h2>
+                    <p>Members to chat with</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-1">
+        <h1>
+            The Ultimate Language Exchange
+        </h1>
+        <p class="subtitle">
+            Learn a language, explore new cultures, and make friends around the world
+        </p>
+        <div class="features">
+            <div class="feature">
+                <img alt="Icon of a globe with a speech bubble" height="50"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F3512af747f4c4611bb1ad1bd0f2c1a3c%2F458889a0b7bf4befa0d49935d5e233d2?width=64&quality=75"
+                    width="50" />
+                <h3>Worldwide Community</h3>
+                <p>Native speakers teach you their language, while you teach them yours. Millions of people use
+                    HelloTalk to practice 150+ languages.</p>
+            </div>
+            <div class="feature">
+                <img alt="Icon of a video camera" height="50"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F3512af747f4c4611bb1ad1bd0f2c1a3c%2F696d54a1617c4c87886228b70555c6d7?width=64&quality=75"
+                    width="50" />
+                <h3>Text, Voice, Video, and More</h3>
+                <p>Chat with language partners through text and voice messages, stickers, voice and video calls, and
+                    interactive Voicerooms and Lives. Whatever your communication preference, choose the method that
+                    best fits your learning goals!</p>
+            </div>
+            <div class="feature">
+                <img alt="Icon of a translation symbol" height="50"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F3512af747f4c4611bb1ad1bd0f2c1a3c%2Fe89751fca6c240829a267378c8bba883?width=64&quality=75"
+                    width="50" />
+                <h3>Intuitive Language Tools</h3>
+                <p>Built-in aids for translation, pronunciation, transliteration, and corrections make conversations run
+                    smoothly. Learning is as simple as chatting!</p>
+            </div>
+            <div class="feature">
+                <img alt="Icon of a compass" height="50"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F3512af747f4c4611bb1ad1bd0f2c1a3c%2Fe86b8b06f57d4087ac98295972049be7?width=64&quality=75"
+                    width="50" />
+                <h3>Moments</h3>
+                <p>Engage with the entire community by posting Moments. The public posts are seen by all native speakers
+                    of your target language and are ideal for asking questions and sharing updates.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-3">
+        <div class="title">
+            Language Exchange
+        </div>
+        <div class="subtitle">
+            Find the perfect language partner
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img alt="A smiling woman with black hair" height="300"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F3512af747f4c4611bb1ad1bd0f2c1a3c%2Fe6f11d3906f042e7864cbeffb23ff778?width=384&quality=75"
+                    width="200" />
+                <img alt="South Korean flag" class="flag" height="30"
+                    src="https://www.hellotalk.com/_next/static/media/ko.14f70579.png?width=32&quality=75" width="30" />
+                <div class="info">
+                    <h3>
+                        이수채
+                    </h3>
+                    <p>
+                        Wants to learn: English
+                    </p>
+                    <p>
+                        Can teach: 한국어
+                    </p>
+                </div>
+                <div class="chat">
+                    <i class="fas fa-comments">
+                    </i>
+                    Start Chatting
+                </div>
+            </div>
+            <div class="card">
+                <img alt="A smiling man with glasses" height="300"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F3512af747f4c4611bb1ad1bd0f2c1a3c%2F234e19a3d485405d9f4034390afa3da6?width=384&quality=75"
+                    width="200" />
+                <img alt="German flag" class="flag" height="30"
+                    src="https://www.hellotalk.com/_next/static/media/de.7091e77f.png?width=32&quality=75" width="30" />
+                <div class="info">
+                    <h3>
+                        Elias
+                    </h3>
+                    <p>
+                        Wants to learn: 中文
+                    </p>
+                    <p>
+                        Can teach: Deutsch
+                    </p>
+                </div>
+                <div class="chat">
+                    <i class="fas fa-comments">
+                    </i>
+                    Start Chatting
+                </div>
+            </div>
+            <div class="card">
+                <img alt="A woman with red hair and glasses" height="300"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F3512af747f4c4611bb1ad1bd0f2c1a3c%2F97fb62fee250413d9e30744a9e920e18?width=384&quality=75"
+                    width="200" />
+                <img alt="French flag" class="flag" height="30"
+                    src="https://www.hellotalk.com/_next/static/media/fr.2f7cacb8.png?width=32&quality=75" width="30" />
+                <div class="info">
+                    <h3>
+                        Rose
+                    </h3>
+                    <p>
+                        Wants to learn: Русский язык
+                    </p>
+                    <p>
+                        Can teach: Français
+                    </p>
+                </div>
+                <div class="chat">
+                    <i class="fas fa-comments">
+                    </i>
+                    Start Chatting
+                </div>
+            </div>
+            <div class="card">
+                <img alt="A man " height="300"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F3512af747f4c4611bb1ad1bd0f2c1a3c%2F3ffddd761806494aa96b30c0ab931390?width=384&quality=75"
+                    width="200" />
+                <img alt="German flag" class="flag" height="30"
+                    src="https://www.hellotalk.com/_next/static/media/sv.019d3139.png?width=32&quality=75" width="30" />
+                <div class="info">
+                    <h3>
+                        León
+                    </h3>
+                    <p>
+                        Wants to learn: 日本語
+                    </p>
+                    <p>
+                        Can teach: Español
+                    </p>
+                </div>
+                <div class="chat">
+                    <i class="fas fa-comments">
+                    </i>
+                    Start Chatting
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
